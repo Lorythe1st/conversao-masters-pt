@@ -1,29 +1,30 @@
-import { Target, Camera, MapPin, PenTool } from "lucide-react";
+import { Target, MapPin, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import metaAdsImage from "@/assets/meta-ads-graph.png";
 import googleMyBusinessImage from "@/assets/google-my-business.jpg";
+import ruiProfile from "@/assets/rui-profile.jpg";
 
 const ServicesSection = () => {
   const services = [
     {
       icon: Target,
-      title: "Gestão de Anúncios Pagos",
-      description: "Meta Ads e Google Ads otimizados para converter. Cada euro conta, cada campanha é estratégica.",
+      title: "Gestão de Publicidade Online",
+      description: "Meta Ads e Google Ads otimizados para trazer clientes ao teu negócio. Cada euro conta, cada campanha é estratégica.",
       features: [
-        "Campanhas focadas em conversão",
+        "Campanhas focadas em resultados reais",
         "Otimização contínua de performance",
         "Relatórios claros e transparentes",
-        "ROI maximizado"
+        "Investimento bem aplicado"
       ],
       image: metaAdsImage
     },
     {
-      icon: Camera,
+      useProfileImage: true,
       title: "Photoshoots Digitais",
       description: "Conteúdo visual profissional que vende. Porque uma imagem vale mais que mil palavras (e muito mais vendas).",
       features: [
         "Fotos profissionais para redes sociais",
-        "Conteúdo para anúncios de alta conversão",
+        "Conteúdo para publicidade de alta conversão",
         "Book fotográfico completo",
         "Identidade visual consistente"
       ]
@@ -71,21 +72,43 @@ const ServicesSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => {
-            const Icon = service.icon;
             return (
               <div 
                 key={index}
                 className="bg-gradient-to-br from-white to-muted p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-border hover:border-primary/50"
               >
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="p-3 bg-primary/10 rounded-xl">
-                    <Icon className="w-8 h-8 text-primary" />
+                {service.useProfileImage ? (
+                  <div className="mb-6">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                        <img 
+                          src={ruiProfile} 
+                          alt="Rui Lory - Photoshoots Digitais"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                        <p className="text-muted-foreground">{service.description}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                    <p className="text-muted-foreground">{service.description}</p>
+                ) : (
+                  <div className="flex items-start gap-4 mb-6">
+                    {service.icon && (
+                      <div className="p-3 bg-primary/10 rounded-xl">
+                        {(() => {
+                          const Icon = service.icon;
+                          return <Icon className="w-8 h-8 text-primary" />;
+                        })()}
+                      </div>
+                    )}
+                    <div>
+                      <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                      <p className="text-muted-foreground">{service.description}</p>
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {service.image && (
                   <div className="mb-6 rounded-xl overflow-hidden">

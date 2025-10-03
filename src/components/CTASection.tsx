@@ -36,9 +36,9 @@ const CTASection = () => {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">ROI Garantido</h3>
+              <h3 className="text-xl font-bold mb-2">Foco em Resultados</h3>
               <p className="text-gray-300">
-                Trabalho focado em retorno. Se não der resultados, ajusto até dar.
+                Trabalho orientado para vendas reais. Se não funcionar, ajusto até funcionar.
               </p>
             </div>
 

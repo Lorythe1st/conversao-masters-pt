@@ -4,15 +4,15 @@ const ProblemSection = () => {
   const problems = [
     {
       title: "Gastas dinheiro mas não vês resultados?",
-      description: "Os teus anúncios têm cliques mas zero vendas. O budget evapora-se e o negócio continua na mesma."
+      description: "Investes em divulgação online mas as vendas não aparecem. O budget desaparece e o negócio continua na mesma."
     },
     {
-      title: "Não sabes se os anúncios estão a funcionar?",
-      description: "Números, métricas, dashboards... mas não fazes ideia se estás no caminho certo ou a queimar dinheiro."
+      title: "Não sabes se a tua publicidade está a funcionar?",
+      description: "Números, métricas, gráficos... mas não fazes ideia se estás no caminho certo ou a desperdiçar dinheiro."
     },
     {
-      title: "Tentaste fazer sozinho e foi um desastre?",
-      description: "Horas perdidas a tentar perceber Meta Ads, Google Ads, targeting... e no final: frustração total."
+      title: "Já investiste em publicidade e não correu bem?",
+      description: "Prometeram-te mundos e fundos, gastaste o teu orçamento, mas os clientes não apareceram. Frustração total."
     },
     {
       title: "A concorrência está sempre à frente?",
@@ -62,8 +62,8 @@ const ProblemSection = () => {
               A Boa Notícia?
             </p>
             <p className="text-xl text-gray-300">
-              Não precisas de ser um guru do marketing digital. Precisas de alguém que saiba o que está a fazer. 
-              E que <span className="text-primary font-semibold">transforme cliques em dinheiro na tua conta</span>.
+              Não precisas de ser especialista em publicidade online. Precisas de alguém que saiba o que está a fazer. 
+              E que <span className="text-primary font-semibold">transforme investimento em vendas reais</span>.
             </p>
           </div>
         </div>

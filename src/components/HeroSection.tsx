@@ -24,15 +24,15 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Pare de Desperdiçar Dinheiro em{" "}
+              Para de Desperdiçar Dinheiro em{" "}
               <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Anúncios que Não Convertem
+                Publicidade que Não Funciona
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              Transformo o teu investimento em anúncios pagos em <strong className="text-white">clientes reais</strong> e vendas consistentes. 
-              Sem truques. Sem promessas vazias. <strong className="text-primary">Resultados tangíveis</strong>.
+              Transformo o teu investimento em publicidade online em <strong className="text-white">clientes reais</strong> e vendas consistentes. 
+              Sem truques. Sem promessas vazias. <strong className="text-primary">Resultados que podes ver</strong>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -62,8 +62,8 @@ const HeroSection = () => {
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">+500%</div>
-                <div className="text-sm text-gray-400 mt-1">ROI Médio</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary">Foco</div>
+                <div className="text-sm text-gray-400 mt-1">Em Resultados</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-primary">24h</div>

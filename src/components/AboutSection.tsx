@@ -47,7 +47,7 @@ const AboutSection = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <p className="text-foreground">
-                  <strong>Foco em ROI</strong> - cada euro investido tem que valer a pena
+                  <strong>Foco em resultados</strong> - cada euro investido tem que valer a pena
                 </p>
               </div>
               <div className="flex items-start gap-3">
