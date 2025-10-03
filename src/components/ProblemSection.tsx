@@ -8,7 +8,7 @@ const ProblemSection = () => {
     },
     {
       title: "Não sabes se a tua publicidade está a funcionar?",
-      description: "Números, métricas, gráficos... mas não fazes ideia se estás no caminho certo ou a desperdiçar dinheiro."
+      description: "Gastas dinheiro em publicidade mas não fazes ideia se está a funcionar ou se estás só a desperdiçar o teu orçamento."
     },
     {
       title: "Já investiste em publicidade e não correu bem?",
