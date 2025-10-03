@@ -30,6 +30,15 @@ jobs:
         env:
           BASE_PATH: '/'
       
+      - name: Create CNAME file
+        run: echo "www.ruilorytrafego.com" > ./dist/CNAME
+      
+      - name: Verify CNAME exists
+        run: |
+          echo "Checking CNAME file:"
+          cat ./dist/CNAME
+          ls -la ./dist/
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
