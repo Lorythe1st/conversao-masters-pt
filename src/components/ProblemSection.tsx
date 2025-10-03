@@ -4,7 +4,7 @@ const ProblemSection = () => {
   const problems = [
     {
       title: "Gastas dinheiro mas não vês resultados?",
-      description: "Investes em divulgação online mas as vendas não aparecem. O budget desaparece e o negócio continua na mesma."
+      description: "Investes em divulgação - outdoors, flyers, redes sociais - mas as vendas não aparecem. O budget desaparece e o negócio continua na mesma."
     },
     {
       title: "Não sabes se a tua publicidade está a funcionar?",
