@@ -11,8 +11,8 @@ const ProblemSection = () => {
       description: "Gastas dinheiro em publicidade mas não fazes ideia se está a funcionar ou se estás só a desperdiçar o teu orçamento."
     },
     {
-      title: "Já investiste em publicidade e não correu bem?",
-      description: "Prometeram-te mundos e fundos, gastaste o teu orçamento, mas os clientes não apareceram. Frustração total."
+      title: "Já promoveste posts no Instagram mas não viste resultados?",
+      description: "Carregaste no botão de 'Promover', gastaste 50€, 100€... e só recebeste alguns gostos. Zero clientes, zero vendas."
     },
     {
       title: "A concorrência está sempre à frente?",
