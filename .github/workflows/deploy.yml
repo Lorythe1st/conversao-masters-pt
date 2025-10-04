@@ -31,7 +31,7 @@ jobs:
           BASE_PATH: '/'
       
       - name: Create CNAME file
-        run: echo "www.ruilorytrafego.com" > ./dist/CNAME
+        run: echo "ruilorytrafego.com" > ./dist/CNAME
       
       - name: Verify CNAME exists
         run: |
