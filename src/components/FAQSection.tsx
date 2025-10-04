@@ -33,7 +33,7 @@ const FAQSection = () => {
     },
     {
       question: "Como posso começar?",
-      answer: "É simples! Podes contactar-me diretamente pelo WhatsApp através do número +351 965 604 641 ou preenchendo o formulário. Garantimos uma resposta em menos de 2 horas para WhatsApp e 24h email (dias úteis) para que possamos começar a fazer o seu negócio crescer online o mais rápido possível."
+      answer: "É simples! Podes contactar-me diretamente pelo WhatsApp através do número +351 965 604 641 ou preenchendo o formulário. Garanto uma resposta em menos de 2H para WhatsApp e 24H para email (dias úteis) para que possamos começar a fazer o teu negócio crescer online o mais rápido possível."
     }
   ];
 
