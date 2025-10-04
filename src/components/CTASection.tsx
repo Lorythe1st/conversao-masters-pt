@@ -62,7 +62,7 @@ const CTASection = () => {
             <Button 
               variant="hero" 
               size="lg"
-              className="text-xl px-12 py-6 h-auto"
+              className="text-base md:text-xl px-6 md:px-12 py-4 md:py-6 h-auto w-full md:w-auto"
               asChild
             >
               <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
