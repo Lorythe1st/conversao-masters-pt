@@ -29,7 +29,7 @@ const FAQSection = () => {
     },
     {
       question: "Preciso de ter um grande orçamento para começar?",
-      answer: "Não. Trabalhamos com orçamentos adaptados à realidade de pequenos e médios negócios. O mais importante é que cada euro investido seja estratégico e traga retorno. O nosso objetivo é otimizar o seu investimento para que obtenha o máximo de resultados, independentemente do tamanho do orçamento inicial."
+      answer: "Não. Trabalho com orçamentos adaptados à realidade de pequenos e médios negócios. O mais importante é que cada euro investido seja estratégico e traga retorno. O meu objetivo é otimizar o teu investimento para que obtenhas o máximo de resultados, independentemente do tamanho do orçamento inicial."
     },
     {
       question: "Como posso começar?",
