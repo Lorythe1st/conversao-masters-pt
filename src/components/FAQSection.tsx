@@ -9,7 +9,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "O que é Gestão de Tráfego Pago e como pode ajudar o meu negócio?",
-      answer: "A Gestão de Tráfego Pago consiste em criar, otimizar e gerir campanhas de anúncios online em plataformas como Google Ads e Meta Ads (Facebook e Instagram). O objetivo é direcionar visitantes qualificados para o seu website ou negócio, transformando cliques em clientes reais e vendas. Ajuda o seu negócio a alcançar um público maior, aumentar a visibilidade da marca e gerar um retorno direto sobre o investimento em publicidade."
+      answer: "A Gestão de Tráfego Pago consiste em criar, otimizar e gerir campanhas de anúncios online em plataformas como Google Ads e Meta Ads (Facebook e Instagram). O objetivo é direcionar visitantes qualificados para o teu website ou negócio, transformando cliques em clientes reais e vendas. Ajudo o teu negócio a alcançar um público maior, aumentar a visibilidade da marca e gerar um retorno direto sobre o investimento em publicidade."
     },
     {
       question: "Além da gestão de anúncios, que outros serviços oferecem?",
