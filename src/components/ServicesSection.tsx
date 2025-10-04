@@ -134,7 +134,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="cta" size="lg" className="text-lg px-12" asChild>
+          <Button variant="cta" size="lg" className="text-base md:text-lg px-6 md:px-12 w-full md:w-auto" asChild>
             <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
               Vamos Conversar no WhatsApp
             </a>
