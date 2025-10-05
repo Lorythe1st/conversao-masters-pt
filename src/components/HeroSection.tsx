@@ -51,7 +51,7 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
+                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 text-base font-medium"
                 asChild
               >
                 <a href="#servicos">
