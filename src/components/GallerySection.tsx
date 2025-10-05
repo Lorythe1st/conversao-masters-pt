@@ -3,6 +3,7 @@ import rui2 from "@/assets/rui-2.png";
 import rui3 from "@/assets/rui-3.png";
 import rui4 from "@/assets/rui-4.png";
 import rui5 from "@/assets/rui-5.png";
+import rui6 from "@/assets/rui-6.png";
 import ruiUrban from "@/assets/rui-urban.png";
 import ruiStreet from "@/assets/rui-street.png";
 
@@ -13,6 +14,7 @@ const GallerySection = () => {
     { src: rui3, alt: "Rui Lory - Sessão profissional 3" },
     { src: rui4, alt: "Rui Lory - Sessão profissional 4" },
     { src: rui5, alt: "Rui Lory - Sessão profissional 5" },
+    { src: rui6, alt: "Rui Lory - Sessão profissional 6" },
     { src: ruiUrban, alt: "Rui Lory - Fotografia urbana" },
     { src: ruiStreet, alt: "Rui Lory - Street photography" },
   ];
