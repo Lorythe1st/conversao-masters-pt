@@ -1,51 +1,8 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 
 const ContactFormSection = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Create mailto link
-    const subject = encodeURIComponent(`Novo contacto de ${formData.name}`);
-    const body = encodeURIComponent(
-      `Nome: ${formData.name}\nEmail: ${formData.email}\n\nMensagem:\n${formData.message}`
-    );
-    const mailtoLink = `mailto:clientes@ruilorytrafego.com?subject=${subject}&body=${body}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-
-    // Show success message
-    toast({
-      title: "Email preparado!",
-      description: "O teu cliente de email vai abrir. Se não abrir automaticamente, envia um email para clientes@ruilorytrafego.com",
-    });
-
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const mailtoLink = "mailto:clientes@ruilorytrafego.com?subject=Quero%20saber%20mais%20sobre%20gest%C3%A3o%20de%20anúncios";
 
   return (
     <section id="contacto" className="py-12 bg-muted/30">
@@ -64,66 +21,25 @@ const ContactFormSection = () => {
           </div>
 
           <div className="bg-card rounded-xl shadow-lg p-6 md:p-8 border border-border">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-foreground">
-                  Nome
-                </Label>
-                <Input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="O teu nome"
-                  className="bg-background"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-foreground">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="o-teu-email@exemplo.com"
-                  className="bg-background"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-foreground">
-                  Mensagem
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  required
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Conta-me sobre o teu negócio e como posso ajudar..."
-                  rows={6}
-                  className="bg-background resize-none"
-                />
-              </div>
-
+            <div className="text-center space-y-4">
+              <p className="text-muted-foreground">
+                Clica no botão abaixo para abrir o teu cliente de email
+              </p>
               <Button 
-                type="submit" 
                 variant="outline" 
                 size="default"
-                disabled={isSubmitting}
                 className="w-full md:w-auto group"
+                asChild
               >
-                {isSubmitting ? "A enviar..." : "Enviar Email"}
-                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <a href={mailtoLink}>
+                  Enviar Email
+                  <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-            </form>
+              <p className="text-sm text-muted-foreground">
+                ou envia diretamente para: <strong>clientes@ruilorytrafego.com</strong>
+              </p>
+            </div>
           </div>
         </div>
       </div>
