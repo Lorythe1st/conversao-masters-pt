@@ -65,7 +65,7 @@ const AboutSection = () => {
             </div>
 
             <div className="pt-6">
-              <Button variant="cta" size="lg" asChild>
+              <Button variant="cta" size="lg" className="w-full text-xl font-bold py-6" asChild>
                 <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
                   Vamos Trabalhar Juntos
                 </a>
