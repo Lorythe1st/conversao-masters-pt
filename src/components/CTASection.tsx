@@ -75,15 +75,6 @@ const CTASection = () => {
             </p>
           </div>
 
-          <div className="pt-8 flex flex-wrap justify-center gap-6 text-sm">
-            <a href="https://instagram.com/ruilory.pt" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors">
-              @ruilory.pt
-            </a>
-            <span className="text-gray-600">|</span>
-            <a href={`mailto:Clientes@ruilorytrafego.com`} className="text-gray-300 hover:text-primary transition-colors">
-              Clientes@ruilorytrafego.com
-            </a>
-          </div>
         </div>
       </div>
     </section>
