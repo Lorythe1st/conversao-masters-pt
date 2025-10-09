@@ -85,7 +85,7 @@ const HeroSection = () => {
                 alt="Rui Lory - Especialista em Gestão de Anúncios Pagos" 
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary rounded-2xl p-6 shadow-xl max-w-xs">
+              <div className="absolute -bottom-6 right-0 bg-primary rounded-2xl p-6 shadow-xl max-w-xs">
                 <p className="text-white font-semibold text-lg">
                   💬 "Resultados reais começam com estratégia sólida."
                 </p>
