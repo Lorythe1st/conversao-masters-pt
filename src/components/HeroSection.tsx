@@ -20,7 +20,7 @@ const HeroSection = () => {
           <div className="text-white space-y-8">
             <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-2 text-sm font-medium">
               <Zap className="w-4 h-4 text-primary" />
-              <span>Gestão de Anúncios de Alta Conversão</span>
+              <span>Gestão de Anúncios | Negócios Locais</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -31,8 +31,9 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              Transformo o teu investimento em publicidade online em <strong className="text-white">clientes reais</strong> e vendas consistentes. 
-              Sem truques. Sem promessas vazias. <strong className="text-primary">Resultados que podes ver</strong>.
+              Transformo o teu negócio local em <strong className="text-white">ÍMAN de clientes</strong> usando Google Ads e Meta Ads que realmente convertem.
+              <br /><br />
+              Sem truques. Sem promessas vazias. <strong className="text-primary">Resultados que podes ver em 48h</strong>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -62,15 +63,15 @@ const HeroSection = () => {
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">Foco</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary">⚡ Foco</div>
                 <div className="text-sm text-gray-400 mt-1">Em Resultados</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">24h</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary">⏱️ 48h</div>
                 <div className="text-sm text-gray-400 mt-1">Para Começar</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">100%</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary">💯 100%</div>
                 <div className="text-sm text-gray-400 mt-1">Dedicação</div>
               </div>
             </div>
