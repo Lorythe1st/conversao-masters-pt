@@ -62,15 +62,15 @@ const HeroSection = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
-              <div>
+              <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-primary">⚡ Foco</div>
                 <div className="text-sm text-gray-400 mt-1">Em Resultados</div>
               </div>
-              <div>
+              <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-primary">⏱️ 48h</div>
                 <div className="text-sm text-gray-400 mt-1">Para Começar</div>
               </div>
-              <div>
+              <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-primary">💯 100%</div>
                 <div className="text-sm text-gray-400 mt-1">Dedicação</div>
               </div>
@@ -85,9 +85,9 @@ const HeroSection = () => {
                 alt="Rui Lory - Especialista em Gestão de Anúncios Pagos" 
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
-              <div className="absolute -bottom-6 -right-6 bg-primary rounded-2xl p-6 shadow-xl max-w-xs">
+              <div className="absolute -bottom-6 -left-6 bg-primary rounded-2xl p-6 shadow-xl max-w-xs">
                 <p className="text-white font-semibold text-lg">
-                  "Resultados reais começam com estratégia sólida."
+                  💬 "Resultados reais começam com estratégia sólida."
                 </p>
                 <p className="text-white/80 text-sm mt-2">— Rui Lory</p>
               </div>
