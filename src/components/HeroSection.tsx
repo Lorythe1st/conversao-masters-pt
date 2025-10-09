@@ -31,7 +31,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              Transformo o teu negócio local em <strong className="text-white">ÍMAN de clientes</strong> usando Google Ads e Meta Ads que realmente convertem.
+              Transformo o teu negócio local em <strong className="text-white">ÍMAN de clientes</strong> usando Google Ads e Meta Ads de maneira que realmente convertem.
               <br /><br />
               Sem truques. Sem promessas vazias. <strong className="text-primary">Resultados que podes ver em 48h</strong>.
             </p>
