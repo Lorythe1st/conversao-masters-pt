@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import ContactFormSection from "@/components/ContactFormSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <FAQSection />
       <CTASection />
       <Footer />
+      <CookieConsent />
     </div>
   );
 };

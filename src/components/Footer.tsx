@@ -25,12 +25,19 @@ const Footer = () => {
             </a>
           </div>
           
-          <div>
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <Link 
               to="/politica-privacidade" 
               className="hover:text-primary transition-colors underline"
             >
               Política de Privacidade
+            </Link>
+            <span>•</span>
+            <Link 
+              to="/politica-cookies" 
+              className="hover:text-primary transition-colors underline"
+            >
+              Política de Cookies
             </Link>
           </div>
         </div>
