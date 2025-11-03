@@ -113,7 +113,7 @@ const FreeAuditSection = () => {
           <div className="bg-primary/5 p-6 rounded-lg border border-primary/20 mb-12">
             <p className="text-foreground leading-relaxed">
               <span className="text-2xl mr-2">⚡</span>
-              <strong>Importante:</strong> Esta análise não tem qualquer custo escondido - é uma consulta completamente sem custo. Vou explicar-te o que encontrei e o que considero essencial para o teu negócio crescer online. Depois, a decisão é 100% tua - sem pressão, sem chamadas agressivas. Como numa conversa de café entre profissionais.
+              <strong>Importante:</strong> Esta análise não tem qualquer custo escondido - é uma consulta completamente grátis. Vou explicar-te o que encontrei e o que considero essencial para o teu negócio crescer online. Depois, a decisão é 100% tua - sem pressão, sem chamadas agressivas. Como numa conversa de café entre profissionais.
             </p>
           </div>
 
