@@ -191,6 +191,19 @@ const FreeAuditSection = () => {
                   </>
                 )}
               </Button>
+
+              <p className="text-center text-sm text-muted-foreground mt-4">
+                Preferes falar diretamente?{" "}
+                <a 
+                  href="https://wa.me/351912345678" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  Contacta-me no WhatsApp
+                </a>
+                {" "}— a escolha é tua.
+              </p>
             </form>
           </div>
         </div>
