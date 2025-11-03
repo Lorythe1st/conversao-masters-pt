@@ -55,7 +55,7 @@ const HeroSection = () => {
                 className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 text-lg font-bold"
                 asChild
               >
-                <a href="#servicos">
+                <a href="#como-funciona">
                   Ver Como Funciona
                 </a>
               </Button>

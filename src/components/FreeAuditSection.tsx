@@ -50,7 +50,7 @@ const FreeAuditSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-muted/50">
+    <section id="como-funciona" className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Scroll Stopper */}
