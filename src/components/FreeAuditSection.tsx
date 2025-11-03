@@ -195,7 +195,7 @@ const FreeAuditSection = () => {
               <p className="text-center text-sm text-muted-foreground mt-4">
                 Preferes falar diretamente?{" "}
                 <a 
-                  href="https://wa.me/351912345678" 
+                  href="https://wa.me/351965604641?text=Olá%20Rui!%20Quero%20a%20minha%20análise%20gratuita!" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium"
