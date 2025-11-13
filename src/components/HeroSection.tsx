@@ -89,7 +89,7 @@ const HeroSection = () => {
                 <p className="text-white font-semibold text-lg">
                   💬 "Resultados reais começam com estratégia sólida."
                 </p>
-                <p className="text-white/80 text-sm mt-2">— Rui Lory</p>
+                <p className="text-white/80 text-sm mt-2">Rui Lory</p>
               </div>
             </div>
           </div>
