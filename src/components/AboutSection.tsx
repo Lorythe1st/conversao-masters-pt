@@ -1,22 +1,15 @@
 import { Button } from "@/components/ui/button";
 import ruiProfile from "@/assets/rui-profile.jpg";
 import { CheckCircle2 } from "lucide-react";
-
 const AboutSection = () => {
   const whatsappNumber = "351965604641";
   const whatsappMessage = encodeURIComponent("Olá Rui! Quero marcar uma conversa contigo.");
-
-  return (
-    <section className="py-20 bg-muted">
+  return <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="relative">
             <div className="relative z-10">
-              <img 
-                src={ruiProfile} 
-                alt="Rui Lory - Especialista em Gestão de Tráfego Pago"
-                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
-              />
+              <img src={ruiProfile} alt="Rui Lory - Especialista em Gestão de Tráfego Pago" className="rounded-2xl shadow-2xl w-full max-w-md mx-auto" />
             </div>
             <div className="absolute -bottom-6 -right-6 w-full h-full bg-primary/20 rounded-2xl -z-0"></div>
           </div>
@@ -28,7 +21,7 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Não sou guru. Não prometo milagres. <strong className="text-foreground">Sou gestor de tráfego pago</strong> focado em 
+              Não sou guru. Não prometo milagres. Sou gestor de tráfego pago focado em resultados reais para negócios locais em Portugal. <strong className="text-foreground">Sou gestor de tráfego pago</strong> focado em 
               resultados reais para pequenos negócios em Portugal.
             </p>
 
@@ -74,8 +67,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
