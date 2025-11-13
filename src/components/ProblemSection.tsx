@@ -20,8 +20,7 @@ const ProblemSection = () => {
             Se isto te soa familiar, tens um problema.{" "}
             <span className="text-primary">E não és o único.</span>
           </h2>
-          <p className="text-xl text-muted-foreground">A maioria dos pequenos negócios em Portugal está a desperdiçar milhares de euros em publicidade que não funciona
-.</p>
+          <p className="text-xl text-muted-foreground">A maioria dos negócios em Portugal está a desperdiçar milhares de euros em publicidade que não funciona .</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
