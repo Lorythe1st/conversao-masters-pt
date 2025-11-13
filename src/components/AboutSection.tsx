@@ -9,7 +9,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="relative">
             <div className="relative z-10">
-              <img src={ruiProfile} alt="Rui Lory - Especialista em Gestão de Tráfego Pago" className="rounded-2xl shadow-2xl w-full max-w-md mx-auto" />
+              <img src={ruiProfile} alt="Rui Lory - Especialista em Gestão de Tráfego Pago" className="rounded-2xl shadow-2xl w-full max-w-md mx-auto mr-0 ml-6" />
             </div>
             <div className="absolute -bottom-6 -right-6 w-full h-full bg-primary/20 rounded-2xl -z-0"></div>
           </div>
