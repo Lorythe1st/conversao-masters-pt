@@ -21,8 +21,7 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Não sou guru. Não prometo milagres. Sou gestor de tráfego pago focado em resultados reais para negócios locais em Portugal. <strong className="text-foreground">Sou gestor de tráfego pago</strong> focado em 
-              resultados reais para pequenos negócios em Portugal.
+              Não sou guru. Não prometo milagres. Sou gestor de tráfego pago focado em resultados reais para negócios locais em Portugal.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
