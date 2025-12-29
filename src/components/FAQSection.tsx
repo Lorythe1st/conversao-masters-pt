@@ -12,7 +12,7 @@ const FAQSection = () => {
       answer: "A Gestão de Tráfego Pago consiste em criar, otimizar e gerir campanhas de anúncios online em plataformas como Google Ads e Meta Ads (Facebook e Instagram). O objetivo é direcionar visitantes qualificados para o teu website ou negócio, transformando cliques em clientes reais e vendas. Ajudo o teu negócio a alcançar um público maior, aumentar a visibilidade da marca e gerar um retorno direto sobre o investimento em publicidade."
     },
     {
-      question: "Além da gestão de anúncios, que outros serviços ofereçes?",
+      question: "Além da gestão de anúncios, que outros serviços ofereces?",
       answer: "Para além da gestão de publicidade online (Meta Ads e Google Ads), consigo criar Photoshoots Digitais para criar conteúdo visual profissional que vende, otimização do Google My Business para dominar a tua área local, e Sugestão de Conteúdo para ajudar a criar uma estratégia de engagement e vendas nas tuas redes sociais."
     },
     {
