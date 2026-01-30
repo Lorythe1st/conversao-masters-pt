@@ -14,7 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      audit_requests: {
+        Row: {
+          created_at: string
+          email: string
+          email_sent: boolean | null
+          facebook: string
+          id: string
+          instagram: string
+          name: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          email_sent?: boolean | null
+          facebook: string
+          id?: string
+          instagram: string
+          name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          email_sent?: boolean | null
+          facebook?: string
+          id?: string
+          instagram?: string
+          name?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
