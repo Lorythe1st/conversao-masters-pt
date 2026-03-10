@@ -7,7 +7,7 @@ const AboutSection = () => {
   const whatsappMessage = encodeURIComponent("Olá Rui! Quero marcar uma conversa contigo.");
   
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="relative flex justify-center items-center">
@@ -18,7 +18,7 @@ const AboutSection = () => {
                 className="rounded-2xl shadow-2xl w-full max-w-md" 
               />
             </div>
-            <div className="absolute top-6 left-6 w-full max-w-md h-full bg-primary/20 rounded-2xl -z-0"></div>
+            <div className="absolute top-6 left-6 w-full max-w-md h-full bg-accent/20 rounded-2xl -z-0"></div>
           </div>
 
           <div className="space-y-6">
@@ -38,28 +38,28 @@ const AboutSection = () => {
             
             <div className="space-y-4 pt-4">
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-foreground">
                   <strong>Experiência real</strong> em gestão de anúncios para diversos setores
                 </p>
               </div>
               
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-foreground">
                   <strong>Foco em resultados</strong> - cada euro investido tem que valer a pena
                 </p>
               </div>
               
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-foreground">
                   <strong>Comunicação direta</strong> - sem termos técnicos desnecessários
                 </p>
               </div>
               
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-foreground">
                   <strong>Dedicação total</strong> ao sucesso dos meus clientes
                 </p>

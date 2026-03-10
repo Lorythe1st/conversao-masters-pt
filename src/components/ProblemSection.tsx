@@ -13,7 +13,7 @@ const ProblemSection = () => {
     title: "A concorrência está sempre à frente?",
     description: "Vês os teus competidores a crescer enquanto tu ficas para trás, sem saber o que eles fazem de diferente."
   }];
-  return <section className="py-20 bg-muted">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -24,10 +24,10 @@ const ProblemSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {problems.map((problem, index) => <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
+          {problems.map((problem, index) => <div key={index} className="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <XCircle className="w-8 h-8 text-primary" />
+                  <XCircle className="w-8 h-8 text-accent" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-3">
@@ -42,11 +42,11 @@ const ProblemSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block bg-secondary text-white rounded-2xl p-8 max-w-3xl">
-            <p className="text-2xl md:text-3xl font-bold mb-4">
+          <div className="inline-block bg-card text-foreground rounded-2xl p-8 max-w-3xl border border-border">
+            <p className="text-2xl md:text-3xl font-bold mb-4 text-primary">
               A Boa Notícia?
             </p>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-muted-foreground">
               Não precisas de ser especialista em publicidade online. Precisas de alguém que saiba o que está a fazer. 
               E que <span className="text-primary font-semibold">transforme investimento em vendas reais</span>.
             </p>

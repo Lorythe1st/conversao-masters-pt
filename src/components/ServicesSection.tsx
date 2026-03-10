@@ -29,7 +29,7 @@ const ServicesSection = () => {
   }];
   const whatsappNumber = "351965604641";
   const whatsappMessage = encodeURIComponent("Olá! Quero saber mais sobre os teus serviços de gestão de tráfego.");
-  return <section id="servicos" className="py-20 bg-white">
+  return <section id="servicos" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -43,7 +43,7 @@ const ServicesSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => {
-          return <div key={index} className="bg-gradient-to-br from-white to-muted p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-border hover:border-primary/50">
+          return <div key={index} className="bg-card p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-border hover:border-primary/50">
                 {service.useProfileImage ? <div className="mb-6">
                     <div className="flex items-start gap-4 mb-4">
                       <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
@@ -55,10 +55,10 @@ const ServicesSection = () => {
                       </div>
                     </div>
                   </div> : <div className="flex items-start gap-4 mb-6">
-                    {service.icon && <div className="p-3 bg-primary/10 rounded-xl">
+                    {service.icon && <div className="p-3 bg-accent/10 rounded-xl">
                         {(() => {
                   const Icon = service.icon;
-                  return <Icon className="w-8 h-8 text-primary" />;
+                  return <Icon className="w-8 h-8 text-accent" />;
                 })()}
                       </div>}
                     <div>

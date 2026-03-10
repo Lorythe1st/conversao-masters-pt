@@ -6,56 +6,56 @@ const CTASection = () => {
   const whatsappMessage = encodeURIComponent("Olá Rui! Quero começar a transformar o meu tráfego em vendas AGORA!");
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary via-secondary to-primary/30 text-white relative overflow-hidden">
+    <section className="py-20 bg-background text-foreground relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight text-primary">
             Ainda Estás a Pensar?{" "}
-            <span className="text-primary">Os Teus Concorrentes Não.</span>
+            <span className="text-accent">Os Teus Concorrentes Não.</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
             Cada dia que passa é dinheiro que deixas em cima da mesa. Clientes que vão para a concorrência. 
             Vendas que poderiam ser tuas.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 py-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Urgência Real</h3>
-              <p className="text-gray-300">
+            <div className="bg-card backdrop-blur-sm rounded-xl p-6 border border-border">
+              <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-primary">Urgência Real</h3>
+              <p className="text-muted-foreground">
                 O mercado não espera. Quanto mais cedo começares, mais rápido vês resultados.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Foco em Resultados</h3>
-              <p className="text-gray-300">
+            <div className="bg-card backdrop-blur-sm rounded-xl p-6 border border-border">
+              <TrendingUp className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-primary">Foco em Resultados</h3>
+              <p className="text-muted-foreground">
                 Trabalho orientado para vendas reais. Se não funcionar, ajusto até funcionar.
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Início Rápido</h3>
-              <p className="text-gray-300">
+            <div className="bg-card backdrop-blur-sm rounded-xl p-6 border border-border">
+              <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-primary">Início Rápido</h3>
+              <p className="text-muted-foreground">
                 Em 24h podes ter as primeiras campanhas no ar. Simples e eficaz.
               </p>
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <p className="text-2xl md:text-3xl font-bold mb-6">
+          <div className="bg-card backdrop-blur-sm rounded-2xl p-8 border border-border">
+            <p className="text-2xl md:text-3xl font-bold mb-6 text-primary">
               Não Percas Mais Tempo. Nem Mais Dinheiro.
             </p>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Contacta-me AGORA pelo WhatsApp e vamos fazer o teu negócio crescer online.
             </p>
 
@@ -70,7 +70,7 @@ const CTASection = () => {
               </a>
             </Button>
 
-            <p className="text-sm text-gray-400 mt-6">
+            <p className="text-sm text-muted-foreground mt-6">
               📱 +351 965 604 641 | ✉️ Clientes@ruilorytrafego.com
             </p>
           </div>

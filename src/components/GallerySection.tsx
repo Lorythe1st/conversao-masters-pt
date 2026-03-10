@@ -20,14 +20,14 @@ const GallerySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary text-white">
+    <section className="py-20 bg-background text-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
             Photoshoots que{" "}
-            <span className="text-primary">Vendem a Tua Marca</span>
+            <span className="text-accent">Vendem a Tua Marca</span>
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-muted-foreground">
             Conteúdo visual profissional faz toda a diferença. Vê alguns exemplos do meu trabalho.
           </p>
         </div>
@@ -48,11 +48,11 @@ const GallerySection = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center bg-white/5 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-white/10">
-          <p className="text-lg text-gray-300 mb-4">
-            <strong className="text-white">Photoshoots digitais profissionais</strong> para o teu negócio, produtos ou marca pessoal.
+        <div className="mt-12 text-center bg-card backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-border">
+          <p className="text-lg text-muted-foreground mb-4">
+            <strong className="text-foreground">Photoshoots digitais profissionais</strong> para o teu negócio, produtos ou marca pessoal.
           </p>
-          <p className="text-gray-400">
+          <p className="text-muted-foreground">
             Imagens que contam a tua história e convertem seguidores em clientes.
           </p>
         </div>

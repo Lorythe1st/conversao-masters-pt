@@ -50,7 +50,7 @@ const FreeAuditSection = () => {
   };
 
   return (
-    <section id="como-funciona" className="py-16 md:py-24 bg-muted/50">
+    <section id="como-funciona" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Scroll Stopper */}
@@ -79,8 +79,8 @@ const FreeAuditSection = () => {
           {/* 3 Steps */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-card p-6 rounded-lg border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <FileText className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <FileText className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-2">1. Partilhas os Dados</h3>
               <p className="text-muted-foreground">
@@ -89,8 +89,8 @@ const FreeAuditSection = () => {
             </div>
 
             <div className="bg-card p-6 rounded-lg border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <Search className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <Search className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-2">2. Eu Analiso Tudo</h3>
               <p className="text-muted-foreground">
@@ -99,8 +99,8 @@ const FreeAuditSection = () => {
             </div>
 
             <div className="bg-card p-6 rounded-lg border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <Mail className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-2">3. Recebes a Análise</h3>
               <p className="text-muted-foreground">
