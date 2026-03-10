@@ -52,7 +52,7 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 text-lg font-bold"
+                className="bg-accent/10 backdrop-blur-sm border-accent/30 text-accent hover:bg-accent/20 text-lg font-bold"
                 asChild
               >
                 <a href="#como-funciona">
