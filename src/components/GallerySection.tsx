@@ -20,14 +20,14 @@ const GallerySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary text-white">
+    <section className="py-20 bg-background text-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
             Photoshoots que{" "}
-            <span className="text-primary">Vendem a Tua Marca</span>
+            <span className="text-accent">Vendem a Tua Marca</span>
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-muted-foreground">
             Conteúdo visual profissional faz toda a diferença. Vê alguns exemplos do meu trabalho.
           </p>
         </div>
