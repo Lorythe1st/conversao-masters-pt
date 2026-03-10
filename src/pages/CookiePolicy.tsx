@@ -142,7 +142,7 @@ const CookiePolicy = () => {
             <p className="text-muted-foreground leading-relaxed">
               Se tiver questões sobre esta Política de Cookies, pode contactar-nos através de:
             </p>
-            <div className="mt-4 p-4 bg-secondary/50 rounded-lg">
+            <div className="mt-4 p-4 bg-card rounded-lg">
               <p className="text-muted-foreground">
                 <strong>Email:</strong>{" "}
                 <a href="mailto:clientes@ruilorytrafego.com" className="text-primary hover:underline">
