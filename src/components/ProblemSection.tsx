@@ -42,11 +42,11 @@ const ProblemSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block bg-secondary text-white rounded-2xl p-8 max-w-3xl">
-            <p className="text-2xl md:text-3xl font-bold mb-4">
+          <div className="inline-block bg-card text-foreground rounded-2xl p-8 max-w-3xl border border-border">
+            <p className="text-2xl md:text-3xl font-bold mb-4 text-primary">
               A Boa Notícia?
             </p>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-muted-foreground">
               Não precisas de ser especialista em publicidade online. Precisas de alguém que saiba o que está a fazer. 
               E que <span className="text-primary font-semibold">transforme investimento em vendas reais</span>.
             </p>

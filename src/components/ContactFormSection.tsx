@@ -5,7 +5,7 @@ const ContactFormSection = () => {
   const mailtoLink = "mailto:clientes@ruilorytrafego.com?subject=Quero%20saber%20mais%20sobre%20gest%C3%A3o%20de%20anúncios";
 
   return (
-    <section id="contacto" className="py-12 bg-muted/30">
+    <section id="contacto" className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">

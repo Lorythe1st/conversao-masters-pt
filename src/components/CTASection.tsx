@@ -70,7 +70,7 @@ const CTASection = () => {
               </a>
             </Button>
 
-            <p className="text-sm text-gray-400 mt-6">
+            <p className="text-sm text-muted-foreground mt-6">
               📱 +351 965 604 641 | ✉️ Clientes@ruilorytrafego.com
             </p>
           </div>

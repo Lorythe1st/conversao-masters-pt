@@ -74,10 +74,10 @@ const AuditSection = () => {
 
           {/* Urgency Text */}
           <div className="text-center mb-8">
-            <p className="text-2xl md:text-3xl font-bold text-secondary mb-2">
+            <p className="text-2xl md:text-3xl font-bold text-primary mb-2">
               TUDO EM 48H. COMPLETAMENTE GRÁTIS.
             </p>
-            <p className="text-lg text-secondary/70">
+            <p className="text-lg text-muted-foreground">
               (Sem call de vendas. Sem pressão.)
             </p>
           </div>

@@ -43,7 +43,7 @@ const ServicesSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {services.map((service, index) => {
-          return <div key={index} className="bg-gradient-to-br from-white to-muted p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-border hover:border-primary/50">
+          return <div key={index} className="bg-card p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-border hover:border-primary/50">
                 {service.useProfileImage ? <div className="mb-6">
                     <div className="flex items-start gap-4 mb-4">
                       <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
