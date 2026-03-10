@@ -23,14 +23,14 @@ const AuditSection = () => {
           </div>
 
           {/* Title */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-secondary mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-primary mb-6 leading-tight">
             Não Sabes Porque é que os Teus<br />
             Anúncios Não Funcionam?
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-center text-secondary/80 mb-12 font-medium">
-            Vou mostrar-te <strong className="text-secondary">EXACTAMENTE</strong> o que está errado<br />
+          <p className="text-xl md:text-2xl text-center text-muted-foreground mb-12 font-medium">
+            Vou mostrar-te <strong className="text-foreground">EXACTAMENTE</strong> o que está errado<br />
             (e como corrigir) em menos de 15 minutos.
           </p>
 
