@@ -38,7 +38,7 @@ const AboutSection = () => {
             
             <div className="space-y-4 pt-4">
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <p className="text-foreground">
                   <strong>Experiência real</strong> em gestão de anúncios para diversos setores
                 </p>
