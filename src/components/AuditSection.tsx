@@ -48,9 +48,9 @@ const AuditSection = () => {
           </div>
 
           {/* Benefits List */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 mb-8 shadow-xl border border-secondary/10">
-            <h3 className="text-2xl md:text-3xl font-bold text-secondary mb-6 text-center">
-              O QUE VOU FAZER POR TI (GRÁTIS):
+            <div className="bg-card backdrop-blur-sm rounded-2xl p-8 md:p-10 mb-8 shadow-xl border border-border">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
+                O QUE VOU FAZER POR TI (GRÁTIS):
             </h3>
             
             <div className="space-y-4">
