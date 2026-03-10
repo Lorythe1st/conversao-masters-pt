@@ -26,10 +26,10 @@ const CTASection = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 py-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Urgência Real</h3>
-              <p className="text-gray-300">
+            <div className="bg-card backdrop-blur-sm rounded-xl p-6 border border-border">
+              <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-primary">Urgência Real</h3>
+              <p className="text-muted-foreground">
                 O mercado não espera. Quanto mais cedo começares, mais rápido vês resultados.
               </p>
             </div>
