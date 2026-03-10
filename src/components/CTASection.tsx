@@ -20,7 +20,7 @@ const CTASection = () => {
             <span className="text-accent">Os Teus Concorrentes Não.</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
             Cada dia que passa é dinheiro que deixas em cima da mesa. Clientes que vão para a concorrência. 
             Vendas que poderiam ser tuas.
           </p>
