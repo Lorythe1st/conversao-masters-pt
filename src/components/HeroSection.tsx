@@ -19,7 +19,7 @@ const HeroSection = () => {
           {/* Left content */}
           <div className="text-foreground space-y-8">
             <div className="inline-flex items-center gap-2 bg-accent/10 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2 text-sm font-medium text-accent">
-              <Zap className="w-4 h-4 text-primary" />
+              <Zap className="w-4 h-4 text-accent" />
               <span>Gestão de Anúncios | Negócios Locais</span>
             </div>
 
