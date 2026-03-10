@@ -36,13 +36,13 @@ const AuditSection = () => {
 
           {/* Video Mockup */}
           <div className="relative mb-12 max-w-2xl mx-auto">
-            <div className="aspect-video bg-gradient-to-br from-secondary/20 to-primary/10 rounded-2xl border-4 border-secondary/20 flex items-center justify-center backdrop-blur-sm shadow-2xl">
+            <div className="aspect-video bg-card rounded-2xl border-4 border-border flex items-center justify-center backdrop-blur-sm shadow-2xl">
               <div className="bg-primary/90 backdrop-blur-sm rounded-full p-8 hover:scale-110 transition-transform duration-300 cursor-pointer shadow-xl">
-                <div className="w-0 h-0 border-t-[20px] border-t-transparent border-l-[35px] border-l-white border-b-[20px] border-b-transparent ml-2"></div>
+                <div className="w-0 h-0 border-t-[20px] border-t-transparent border-l-[35px] border-l-primary-foreground border-b-[20px] border-b-transparent ml-2"></div>
               </div>
             </div>
             {/* Decorative elements around video */}
-            <div className="absolute -top-4 -right-4 bg-primary text-white rounded-xl px-4 py-2 font-bold shadow-lg">
+            <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground rounded-xl px-4 py-2 font-bold shadow-lg">
               10-15min
             </div>
           </div>
