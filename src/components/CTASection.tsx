@@ -6,10 +6,10 @@ const CTASection = () => {
   const whatsappMessage = encodeURIComponent("Olá Rui! Quero começar a transformar o meu tráfego em vendas AGORA!");
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary via-secondary to-primary/30 text-white relative overflow-hidden">
+    <section className="py-20 bg-background text-foreground relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
