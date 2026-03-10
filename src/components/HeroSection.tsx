@@ -23,9 +23,9 @@ const HeroSection = () => {
               <span>Gestão de Anúncios | Negócios Locais</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-primary">
               Para de Desperdiçar Dinheiro em{" "}
-              <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="text-accent">
                 Publicidade que Não Funciona
               </span>
             </h1>
