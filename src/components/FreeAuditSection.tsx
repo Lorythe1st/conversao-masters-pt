@@ -79,8 +79,8 @@ const FreeAuditSection = () => {
           {/* 3 Steps */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-card p-6 rounded-lg border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <FileText className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <FileText className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-2">1. Partilhas os Dados</h3>
               <p className="text-muted-foreground">
