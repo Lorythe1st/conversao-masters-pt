@@ -17,8 +17,8 @@ const AuditSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Icon */}
           <div className="flex justify-center mb-8">
-            <div className="bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full p-6">
-              <Video className="w-12 h-12 text-primary" />
+            <div className="bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full p-6">
+              <Video className="w-12 h-12 text-accent" />
             </div>
           </div>
 
