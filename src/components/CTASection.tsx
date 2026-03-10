@@ -42,10 +42,10 @@ const CTASection = () => {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Início Rápido</h3>
-              <p className="text-gray-300">
+            <div className="bg-card backdrop-blur-sm rounded-xl p-6 border border-border">
+              <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-primary">Início Rápido</h3>
+              <p className="text-muted-foreground">
                 Em 24h podes ter as primeiras campanhas no ar. Simples e eficaz.
               </p>
             </div>
