@@ -6,11 +6,11 @@ const AuditSection = () => {
   const whatsappMessage = encodeURIComponent("Olá Rui! Quero a minha auditoria grátis de marketing!");
   
   return (
-    <section className="relative py-20 bg-accent overflow-hidden">
+    <section className="relative py-20 bg-background overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-20 left-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
