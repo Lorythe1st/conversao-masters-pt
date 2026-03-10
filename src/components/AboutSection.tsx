@@ -7,7 +7,7 @@ const AboutSection = () => {
   const whatsappMessage = encodeURIComponent("Olá Rui! Quero marcar uma conversa contigo.");
   
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="relative flex justify-center items-center">
