@@ -34,10 +34,10 @@ const CTASection = () => {
               </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Foco em Resultados</h3>
-              <p className="text-gray-300">
+            <div className="bg-card backdrop-blur-sm rounded-xl p-6 border border-border">
+              <TrendingUp className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-primary">Foco em Resultados</h3>
+              <p className="text-muted-foreground">
                 Trabalho orientado para vendas reais. Se não funcionar, ajusto até funcionar.
               </p>
             </div>
