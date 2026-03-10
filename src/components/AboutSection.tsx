@@ -18,7 +18,7 @@ const AboutSection = () => {
                 className="rounded-2xl shadow-2xl w-full max-w-md" 
               />
             </div>
-            <div className="absolute top-6 left-6 w-full max-w-md h-full bg-primary/20 rounded-2xl -z-0"></div>
+            <div className="absolute top-6 left-6 w-full max-w-md h-full bg-accent/20 rounded-2xl -z-0"></div>
           </div>
 
           <div className="space-y-6">
