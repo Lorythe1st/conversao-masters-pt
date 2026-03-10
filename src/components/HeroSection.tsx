@@ -86,10 +86,10 @@ const HeroSection = () => {
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
               <div className="absolute -bottom-6 right-0 bg-primary rounded-2xl p-6 shadow-xl max-w-xs">
-                <p className="text-white font-semibold text-lg">
+                <p className="text-primary-foreground font-semibold text-lg">
                   💬 "Resultados reais começam com estratégia sólida."
                 </p>
-                <p className="text-white/80 text-sm mt-2">Rui Lory</p>
+                <p className="text-primary-foreground/70 text-sm mt-2">Rui Lory</p>
               </div>
             </div>
           </div>
