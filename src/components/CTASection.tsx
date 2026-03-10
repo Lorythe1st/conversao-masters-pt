@@ -17,7 +17,7 @@ const CTASection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-6xl font-bold leading-tight text-primary">
             Ainda Estás a Pensar?{" "}
-            <span className="text-primary">Os Teus Concorrentes Não.</span>
+            <span className="text-accent">Os Teus Concorrentes Não.</span>
           </h2>
 
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
