@@ -62,9 +62,9 @@ const AuditSection = () => {
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-4 group">
                   <div className="flex-shrink-0 mt-1">
-                    <CheckCircle2 className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                    <CheckCircle2 className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                   </div>
-                  <p className="text-lg md:text-xl text-secondary/90 font-medium">
+                  <p className="text-lg md:text-xl text-muted-foreground font-medium">
                     {benefit}
                   </p>
                 </div>
