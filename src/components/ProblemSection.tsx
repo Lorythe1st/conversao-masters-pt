@@ -13,7 +13,7 @@ const ProblemSection = () => {
     title: "A concorrência está sempre à frente?",
     description: "Vês os teus competidores a crescer enquanto tu ficas para trás, sem saber o que eles fazem de diferente."
   }];
-  return <section className="py-20 bg-muted">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
