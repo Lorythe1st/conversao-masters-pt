@@ -24,7 +24,7 @@ const ProblemSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {problems.map((problem, index) => <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
+          {problems.map((problem, index) => <div key={index} className="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
                   <XCircle className="w-8 h-8 text-primary" />
