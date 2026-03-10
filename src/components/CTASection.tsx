@@ -51,11 +51,11 @@ const CTASection = () => {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <p className="text-2xl md:text-3xl font-bold mb-6">
+          <div className="bg-card backdrop-blur-sm rounded-2xl p-8 border border-border">
+            <p className="text-2xl md:text-3xl font-bold mb-6 text-primary">
               Não Percas Mais Tempo. Nem Mais Dinheiro.
             </p>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Contacta-me AGORA pelo WhatsApp e vamos fazer o teu negócio crescer online.
             </p>
 
