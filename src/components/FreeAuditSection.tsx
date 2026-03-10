@@ -99,8 +99,8 @@ const FreeAuditSection = () => {
             </div>
 
             <div className="bg-card p-6 rounded-lg border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <Mail className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-xl font-semibold mb-2">3. Recebes a Análise</h3>
               <p className="text-muted-foreground">

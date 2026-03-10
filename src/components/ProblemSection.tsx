@@ -27,7 +27,7 @@ const ProblemSection = () => {
           {problems.map((problem, index) => <div key={index} className="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <XCircle className="w-8 h-8 text-primary" />
+                  <XCircle className="w-8 h-8 text-accent" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-3">
