@@ -55,10 +55,10 @@ const ServicesSection = () => {
                       </div>
                     </div>
                   </div> : <div className="flex items-start gap-4 mb-6">
-                    {service.icon && <div className="p-3 bg-primary/10 rounded-xl">
+                    {service.icon && <div className="p-3 bg-accent/10 rounded-xl">
                         {(() => {
                   const Icon = service.icon;
-                  return <Icon className="w-8 h-8 text-primary" />;
+                  return <Icon className="w-8 h-8 text-accent" />;
                 })()}
                       </div>}
                     <div>
