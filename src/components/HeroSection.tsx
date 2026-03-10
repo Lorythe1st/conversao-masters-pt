@@ -17,8 +17,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="text-white space-y-8">
-            <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-2 text-sm font-medium">
+          <div className="text-foreground space-y-8">
+            <div className="inline-flex items-center gap-2 bg-accent/10 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2 text-sm font-medium text-accent">
               <Zap className="w-4 h-4 text-primary" />
               <span>Gestão de Anúncios | Negócios Locais</span>
             </div>
