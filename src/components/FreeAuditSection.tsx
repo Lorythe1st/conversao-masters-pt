@@ -219,6 +219,21 @@ const FreeAuditSection = () => {
                 />
               </div>
 
+              {/* Honeypot anti-bot: invisível para humanos */}
+              <div className="absolute left-[-9999px] w-px h-px overflow-hidden" aria-hidden="true">
+                <label htmlFor="website-url">Website</label>
+                <input
+                  id="website-url"
+                  name="website-url"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </div>
+
+
               <Button
                 type="submit"
                 size="lg"
