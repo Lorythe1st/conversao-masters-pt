@@ -5,9 +5,43 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { FileText, Search, Mail, Rocket } from "lucide-react";
 
+const RECAPTCHA_SITE_KEY = "6LfskJotAAAAAHMomB3yPM_RRMDgHMWHSCry_uN4";
+
+declare global {
+  interface Window {
+    grecaptcha?: {
+      ready: (cb: () => void) => void;
+      execute: (siteKey: string, opts: { action: string }) => Promise<string>;
+    };
+  }
+}
+
+const getRecaptchaToken = (): Promise<string | null> =>
+  new Promise((resolve) => {
+    const grecaptcha = window.grecaptcha;
+    if (!grecaptcha) {
+      resolve(null);
+      return;
+    }
+    const timeout = setTimeout(() => resolve(null), 8000);
+    grecaptcha.ready(() => {
+      grecaptcha
+        .execute(RECAPTCHA_SITE_KEY, { action: "audit_request" })
+        .then((token) => {
+          clearTimeout(timeout);
+          resolve(token);
+        })
+        .catch(() => {
+          clearTimeout(timeout);
+          resolve(null);
+        });
+    });
+  });
+
 const FreeAuditSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     instagram: "",
@@ -20,11 +54,19 @@ const FreeAuditSection = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke("send-audit-request", {
-        body: formData,
+      // Honeypot: humanos nunca preenchem este campo
+      if (honeypot.trim() !== "") {
+        throw new Error("bot");
+      }
+
+      const recaptchaToken = await getRecaptchaToken();
+
+      const { data, error } = await supabase.functions.invoke("send-audit-request", {
+        body: { ...formData, recaptchaToken, honeypot },
       });
 
       if (error) throw error;
+      if (data?.error) throw new Error(data.error);
 
       toast({
         title: "✅ Pedido recebido!",
@@ -48,6 +90,7 @@ const FreeAuditSection = () => {
       setIsSubmitting(false);
     }
   };
+
 
   return (
     <section id="como-funciona" className="py-16 md:py-24 bg-background">
@@ -175,6 +218,21 @@ const FreeAuditSection = () => {
                   placeholder="seuemail@exemplo.com"
                 />
               </div>
+
+              {/* Honeypot anti-bot: invisível para humanos */}
+              <div className="absolute left-[-9999px] w-px h-px overflow-hidden" aria-hidden="true">
+                <label htmlFor="website-url">Website</label>
+                <input
+                  id="website-url"
+                  name="website-url"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </div>
+
 
               <Button
                 type="submit"

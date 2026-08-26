@@ -11,11 +11,16 @@ const corsHeaders = {
     "authorization, x-client-info, apikey, content-type",
 };
 
+const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY");
+const MIN_SCORE = 0.5;
+
 interface AuditRequest {
   name: string;
   instagram: string;
   facebook: string;
   email: string;
+  recaptchaToken?: string;
+  honeypot?: string;
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -27,7 +32,58 @@ const handler = async (req: Request): Promise<Response> => {
   const supabase = createClient(SUPABASE_URL!, SUPABASE_SERVICE_ROLE_KEY!);
 
   try {
-    const { name, instagram, facebook, email }: AuditRequest = await req.json();
+    const { name, instagram, facebook, email, recaptchaToken, honeypot }:
+      AuditRequest = await req.json();
+
+    // Honeypot: se vier preenchido, é bot
+    if (honeypot && honeypot.trim() !== "") {
+      console.warn("Blocked submission: honeypot filled");
+      return new Response(JSON.stringify({ error: "Submissão inválida." }), {
+        status: 400,
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      });
+    }
+
+    // reCAPTCHA v3 verification
+    if (!recaptchaToken) {
+      console.warn("Blocked submission: missing reCAPTCHA token");
+      return new Response(
+        JSON.stringify({ error: "Verificação de segurança falhou." }),
+        {
+          status: 400,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        },
+      );
+    }
+
+    const verifyRes = await fetch(
+      "https://www.google.com/recaptcha/api/siteverify",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          secret: RECAPTCHA_SECRET_KEY ?? "",
+          response: recaptchaToken,
+        }),
+      },
+    );
+    const verify = await verifyRes.json();
+    console.log("reCAPTCHA verify:", {
+      success: verify.success,
+      score: verify.score,
+      action: verify.action,
+    });
+
+    if (!verify.success || (verify.score ?? 0) < MIN_SCORE) {
+      return new Response(
+        JSON.stringify({ error: "Verificação de segurança falhou." }),
+        {
+          status: 403,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        },
+      );
+    }
+
 
     console.log("Saving audit request to database for:", name);
 
