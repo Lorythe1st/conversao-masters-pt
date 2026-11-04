@@ -14,6 +14,7 @@ const CookieConsent = () => {
 
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
+    (window as unknown as { loadMetaPixel?: () => void }).loadMetaPixel?.();
     setShowBanner(false);
   };
 
