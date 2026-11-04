@@ -89,7 +89,7 @@ html{scroll-behavior:smooth}
 .lp input,.lp textarea{width:100%;padding:.85rem 1rem;border-radius:10px;border:1px solid #6a696f;background:var(--c);color:var(--o);font:inherit}
 .lp button.btn{border:0;cursor:pointer;font:inherit;font-weight:700;justify-self:start}
 .lp footer{padding:2rem 0 calc(2rem + env(safe-area-inset-bottom,0));font-size:.85rem;color:var(--m)}
-.lp footer .w{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.lp footer .w{display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:.5rem 1.5rem}
 @media(prefers-reduced-motion:reduce){.lp *{transition:none!important;scroll-behavior:auto!important}
 }
 .lp button.btn:disabled{opacity:.6;cursor:wait}
